@@ -1,1 +1,2 @@
 # learnD
+LearnD will help you in learning german language. If you want to make yourself to spent even more time on learning german, you can add "restricted processes". For instance, if you add "chrome.exe" as a restricted process, you won't be able to launch chrome until you did some german studying.

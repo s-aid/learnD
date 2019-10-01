@@ -1,14 +1,44 @@
 package learnD;
 
-import java.util.List;
-
 public class Word 
 {
-	// Contents strings of type "ARTICLE {german word}-die{plural german word}
-	// All strings are synonyms
-	private List<String> german;
+	private String german = ""; // type "ARTICLE {german word}-die{plural german word}
+	private String russian = ""; // type "{russian word}-{plural russian word}
+	private String conjugation = "";
+	private boolean isLearned = false;
 	
-	// Contents strings of type "{russian word}-{plural russian word}
-	// All strings are synonyms
-	private List<String> russian;
+	public void setGerman(String german)
+	{
+		this.german = german;
+	}
+	public void setRussian(String russian)
+	{
+		this.russian = russian;
+	}
+	public void setConjugation(String conjugation)
+	{
+		this.conjugation = conjugation;
+	}
+	public void setLearnedStatus(boolean isLearned)
+	{
+		this.isLearned = isLearned;
+	}
+	
+	public String getGerman()
+	{
+		return german;
+	}
+	public String getRussian()
+	{
+		return russian;
+	}
+	public String getConjugation()
+	{
+		return conjugation;
+	}
+	public boolean isLearned()
+	{
+		return isLearned;
+	}
+	
 }
