@@ -41,5 +41,4 @@ public class Word
 		return isLearned;
 	}
 	
-
 }
