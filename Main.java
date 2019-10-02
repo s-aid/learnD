@@ -15,14 +15,15 @@ public class Main
 {
 	public static void main(String[] args) throws Exception 
 	{
-		List<String> restrictedProcesses = new ArrayList<String>();
-		restrictedProcesses.add("csgo.exe");
+		Word myWord = new Word();
+		myWord.setGerman("das Buch-die Bucher");
+		myWord.setRussian("книга-книги");
+		myWord.setLearnedStatus(false);
 		
-		Terminator terminator = new Terminator(restrictedProcesses);
-		Conjugation con = new Conjugation("brauchen");
-		System.out.println(con.toString());
-		Conjugation con2 = new Conjugation();
-		con2.parseFromString(con.toString());
-		System.out.println(con2.toString());
+		System.out.println(myWord.toString());
+		
+		Word parsedWord = new Word();
+		parsedWord.parseFromString(myWord.toString());
+		System.out.println(parsedWord.toString());
 	}
 }

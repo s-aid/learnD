@@ -2,13 +2,13 @@ package learnD;
 
 public class Conjugation 
 {
-	String ich;
-	String du;
-	String er;
+	String ich = "";
+	String du = "";
+	String er = "";
 	
-	String wir;
-	String ihr;
-	String Sie;
+	String wir = "";
+	String ihr = "";
+	String Sie = "";
 	
 	public Conjugation(String verb)
 	{
@@ -90,6 +90,8 @@ public class Conjugation
 	public String toString() 
 	{
 		// Format: <ich>,<du>,<er/sie/es>,<wir>,<ihr>,<Sie>
+		if (ich == "")
+			return "";
 		return ich + ',' + du + ',' + er + ',' + wir + ',' + ihr + ',' + Sie + '.';
 	}
 	public void parseFromString(String toParse) throws Exception
