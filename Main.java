@@ -17,7 +17,7 @@ public class Main
 	{
 		Word myWord = new Word();
 		myWord.setGerman("das Buch-die Bucher");
-		myWord.setRussian("книга-книги");
+		myWord.setRussian("пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅ");
 		myWord.setLearnedStatus(false);
 		
 		System.out.println(myWord.toString());
